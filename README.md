@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Todo App
 
-## Getting Started
+Welcome to the Todo App! This application is designed to help you manage your tasks efficiently and effectively. Whether you're a student, a professional, or just someone looking to keep track of daily chores, this app is here to assist you.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Add Tasks**: Easily add new tasks with a title and description.
+- **Edit Tasks**: Modify existing tasks to keep your list up to date.
+- **Delete Tasks**: Remove tasks that are no longer needed.
+- **Mark as Complete**: Keep track of completed tasks with a simple toggle.
+- **Filter Tasks**: View tasks based on their status (all, active, completed).
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+To get started with the Todo App, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/todo-app.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd todo-app
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Install Dependencies**:
+   If you're using npm:
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+   If you're using yarn:
+   ```bash
+   yarn install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Start the Application**:
+   ```bash
+   npm start
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   Your Todo App should now be running on `http://localhost:3000`.
+
+## Usage
+
+Once the application is running, you can start adding tasks by following these steps:
+
+1. **Add a New Task**: Enter the task title and description in the input fields and click the "Add Task" button.
+2. **Edit a Task**: Click on the task you want to edit, make your changes, and save.
+3. **Delete a Task**: Click the delete icon next to the task you wish to remove.
+4. **Mark as Complete**: Click the checkbox next to a task to mark it as completed.
+5. **Filter Tasks**: Use the filter options to view all tasks, only active tasks, or only completed tasks.
+
+## Technologies Used
+
+- **Frontend**: React.js, HTML, CSS
+- **State Management**: Redux (or Context API)
+- **Backend**: Node.js, Express (if applicable)
+- **Database**: MongoDB (if applicable)
+- **Deployment**: Heroku, Vercel, or Netlify
+
+## Contributing
+
+We welcome contributions to the Todo App! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Thank you for checking out the Todo App! We hope it helps you stay organized and productive. If you have any questions or feedback, feel free to reach out!
