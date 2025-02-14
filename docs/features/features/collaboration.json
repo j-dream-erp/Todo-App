@@ -1,0 +1,15 @@
+{
+  "feature": "Collaboration",
+  "featureSchema": {
+    "name": "Collaboration",
+    "description": "Allows users to share task lists and gives team members the ability to comment on tasks, fostering collaboration.",
+    "userStory": "As a user, I want to share my task lists and collaborate with team members through comments and updates.",
+    "acceptanceCriteria": "Users must be able to invite others to view or modify task lists. The system should support adding and viewing comments on individual tasks.",
+    "diagram": "",
+    "additional": "Include role-based permissions to manage what collaborators are allowed to do within the shared lists.",
+    "prompt": "Develop a collaboration feature that supports task list sharing and commenting. This should include user invitation, role management, and real-time updates for comments.",
+    "code": "",
+    "notes": "Ensure data privacy and secure access controls for shared content.",
+    "filePath": "features/collaboration.json"
+  }
+}
