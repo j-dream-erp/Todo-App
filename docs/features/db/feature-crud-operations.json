@@ -1,0 +1,15 @@
+{
+  "feature": "CRUD Operations",
+  "featureSchema": {
+    "name": "CRUD Operations",
+    "description": "Provides full Create, Read, Update, Delete functionality for tasks.",
+    "userStory": "As a user, I want to create new tasks, view existing tasks, update my tasks as needed, and delete tasks that are no longer required.",
+    "acceptanceCriteria": "1. Ability to insert new tasks in the database. 2. Retrieve tasks based on filters like status, due date, or priority. 3. Update task attributes including status, title, description, and due date. 4. Delete tasks reliably, ensuring no orphan data remains.",
+    "diagram": "Flowchart diagram showcasing the CRUD operations integration with the database.",
+    "additional": "Operations should handle error cases and provide appropriate status messages on failures.",
+    "prompt": "Develop full CRUD APIs for the Todo app that interact with the database to insert, read, update, and delete tasks. Ensure input validation and handle error scenarios.",
+    "code": "// Example pseudo-code for CRUD operations\n// Create Task\nPOST /tasks { title, description, due_date, priority, tags }\n\n// Read Tasks\nGET /tasks?status=pending\n\n// Update Task\nPUT /tasks/{id} { status, title, description, due_date, priority, tags }\n\n// Delete Task\nDELETE /tasks/{id}",
+    "notes": "Ensure proper error handling and transaction management during each operation.",
+    "filePath": "feature-crud-operations.json"
+  }
+}
