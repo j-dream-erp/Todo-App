@@ -1,0 +1,15 @@
+{
+  "feature": "Task Organization",
+  "featureSchema": {
+    "name": "Task Organization",
+    "description": "Enables users to organize tasks by setting due dates and categorizing them through tags. This improves task prioritization and filtering.",
+    "userStory": "As a user, I want to organize tasks with due dates and tags so that I can prioritize and filter them based on deadlines or categories.",
+    "acceptanceCriteria": "Tasks should support date inputs for deadlines and allow assignment of one or more tags/categories. Tasks should display visual cues for due dates and category grouping.",
+    "diagram": "",
+    "additional": "Include options for quick date selection and a predefined list of categories with the possibility for custom tags.",
+    "prompt": "Create a feature that allows users to add due dates and tags to their tasks. This should include UI components for date picking and tag selection, with backend integration to store these details.",
+    "code": "",
+    "notes": "Ensure the feature supports localization for date formats and multi-tag selection.",
+    "filePath": "features/task_organization.json"
+  }
+}
