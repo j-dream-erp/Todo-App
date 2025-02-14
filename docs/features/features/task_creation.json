@@ -1,0 +1,15 @@
+{
+  "feature": "Task Creation",
+  "featureSchema": {
+    "name": "Task Creation",
+    "description": "Allows users to create new tasks with an option to add detailed descriptions. This is the fundamental building block of the Todo App.",
+    "userStory": "As a user, I want to create tasks easily so that I can keep track of my activities and manage my schedule.",
+    "acceptanceCriteria": "Users must be able to add a task by providing a title and an optional description. The task should be saved persistently and visible in the task list.",
+    "diagram": "",
+    "additional": "Include validations for empty input and provide a user-friendly error message if necessary.",
+    "prompt": "Develop a UI component that allows users to enter a task title and description. Ensure that the component validates input and integrates with the backend to store new tasks.",
+    "code": "",
+    "notes": "Focus on a simple and intuitive form interface; consider both mobile and desktop experiences.",
+    "filePath": "features/task_creation.json"
+  }
+}
