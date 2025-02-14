@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link"; // Commented out
 
 export default function Home() {
   const [email, setEmail] = useState("");
