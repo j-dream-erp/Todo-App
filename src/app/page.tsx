@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     alert(`Thank you for signing up, ${email}!`);
   };
