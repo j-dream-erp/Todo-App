@@ -1,0 +1,15 @@
+{
+  "feature": "Analytics and Reporting",
+  "featureSchema": {
+    "name": "Analytics and Reporting",
+    "description": "Gathers data on task completion, productivity, and usage patterns, providing insights and reports for users.",
+    "userStory": "As a user, I want insights into my productivity trends and task completion rates so that I can better manage my time and improve efficiency.",
+    "acceptanceCriteria": "1. Collect data on task statuses and completion times. 2. Generate reports such as completed task counts over time and average time to completion. 3. Provide visualizations or export options for reports.",
+    "diagram": "Analytics dashboard layout showing key metrics and reporting graphs.",
+    "additional": "Consider using external analytics libraries or integration with BI tools.",
+    "prompt": "Implement an analytics and reporting system for the Todo app that aggregates task data to generate useful productivity insights and visual reports.",
+    "code": "// Pseudo-code for generating a simple analytics report\nfunction generateReport(tasks) {\n  const completedTasks = tasks.filter(task => task.status === 'completed');\n  const report = {\n    totalTasks: tasks.length,\n    completedTasks: completedTasks.length,\n    completionRate: (completedTasks.length / tasks.length) * 100\n  };\n  return report;\n}\n\nconsole.log(generateReport(taskData));",
+    "notes": "Ensure that data collection complies with privacy regulations if user data is aggregated.",
+    "filePath": "feature-analytics-reporting.json"
+  }
+}
