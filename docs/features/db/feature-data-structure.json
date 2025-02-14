@@ -1,0 +1,15 @@
+{
+  "feature": "Data Structure",
+  "featureSchema": {
+    "name": "Task and User Data Structure",
+    "description": "Defines the core data models for the Todo app including Task and User entities. The Task model includes attributes like ID, Title, Description, Status, Due Date, Priority, and Tags. The User model includes User ID, Username, Email, and Password for authentication.",
+    "userStory": "As a user, I want my tasks and account details to be stored in a structured format so that I can easily manage and access them.",
+    "acceptanceCriteria": "1. The Task model must contain fields: ID, Title, Description, Status, Due Date, Priority, and Tags. 2. If multiple users are supported, the User model must include fields: User ID, Username, Email, Password. 3. The models should enforce data integrity via unique identifiers and appropriate constraints.",
+    "diagram": "ER Diagram showing relationships between Task and User tables.",
+    "additional": "Ensure proper indexing on primary keys and foreign keys. Implement validation rules for data consistency.",
+    "prompt": "Design the database schemas for the Todo app including a Task model with fields ID, Title, Description, Status, Due Date, Priority, and Tags, and a User model with User ID, Username, Email, and Password. Include indexes, constraints, and an ER diagram outline for clarity.",
+    "code": "-- SQL DDL for Task model\nCREATE TABLE Task (\n    id SERIAL PRIMARY KEY,\n    title VARCHAR(255) NOT NULL,\n    description TEXT,\n    status VARCHAR(50) CHECK (status IN ('pending', 'in progress', 'completed')),\n    due_date DATE,\n    priority VARCHAR(50) CHECK (priority IN ('low', 'medium', 'high')),\n    tags TEXT[]\n);\n\n-- SQL DDL for User model\nCREATE TABLE User (\n    user_id SERIAL PRIMARY KEY,\n    username VARCHAR(100) UNIQUE NOT NULL,\n    email VARCHAR(255) UNIQUE NOT NULL,\n    password VARCHAR(255) NOT NULL\n);",
+    "notes": "This schema sets up the base for task and user management. Additional adjustments may be required for scaling and performance.",
+    "filePath": "feature-data-structure.json"
+  }
+}
