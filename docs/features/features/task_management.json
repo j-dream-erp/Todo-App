@@ -1,0 +1,15 @@
+{
+  "feature": "Task Management",
+  "featureSchema": {
+    "name": "Task Management",
+    "description": "Provides functionality for users to edit, delete, and mark tasks as complete. This helps in maintaining an up-to-date task list.",
+    "userStory": "As a user, I want to be able to edit, delete, or complete tasks so that I can manage my to-do list effectively.",
+    "acceptanceCriteria": "Users must be able to update task details, remove tasks, and mark tasks as completed. The UI should update to reflect the task's current state.",
+    "diagram": "",
+    "additional": "Include confirmation dialogs for deletions and visual feedback when a task is marked as complete.",
+    "prompt": "Implement features that allow editing, deleting, and completing tasks. The system should handle state changes appropriately and update the interface in real-time.",
+    "code": "",
+    "notes": "Ensure changes are synchronized with the backend and handle possible conflicts if multiple users are working on the same tasks.",
+    "filePath": "features/task_management.json"
+  }
+}
