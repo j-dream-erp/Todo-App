@@ -1,0 +1,15 @@
+{
+  "feature": "Integration with Other Services",
+  "featureSchema": {
+    "name": "Integration with Other Services",
+    "description": "Facilitates integration with external services such as calendars, email, and third-party task management tools to enhance functionality.",
+    "userStory": "As a user, I want my Todo app to integrate with my calendar and email so that I can receive task reminders and manage events seamlessly.",
+    "acceptanceCriteria": "1. Provide interfaces for syncing with calendar services to schedule due dates and reminders. 2. Enable email notifications for task updates. 3. Ensure integration points are secure and modular.",
+    "diagram": "Integration diagram showing connections between the Todo app and external services like calendars and email providers.",
+    "additional": "APIs for third-party integration should be well documented and secure.",
+    "prompt": "Develop integration points for the Todo app to connect with calendar and email services. The feature should support receiving updates and sending notifications, with clear API documentation.",
+    "code": "// Pseudo-code for sending an email notification\nfunction sendTaskNotification(userEmail, task) {\n  // Use an email service API\n  emailService.send({\n    to: userEmail,\n    subject: `Reminder: ${task.title}`,\n    body: `Your task is due on ${task.due_date}. Please review it.`\n  });\n}\n\n// Integration with a calendar API would follow a similar pattern",
+    "notes": "Verify that all integrations conform to the external services' APIs and usage policies.",
+    "filePath": "feature-integration-services.json"
+  }
+}
